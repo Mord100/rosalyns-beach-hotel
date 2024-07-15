@@ -47,6 +47,17 @@ function Footer() {
             </ul>
           </div>
         </div>
+        <div className="mt-8 border-t  font-normal pt-4 text-center">
+          <p>Privacy Policy | Developed By Divdynamics</p>
+          <p>&copy; {new Date().getFullYear()} Rosalyn's Beach Hotel. All rights reserved.</p>
+        </div>
+        <div className="flex justify-center mt-4 space-x-4">
+          <FaFacebook className="text-xl" />
+          <FaInstagram className="text-xl" />
+          <FaPinterest className="text-xl" />
+          <FaTwitter className="text-xl" />
+          <FaYoutube className="text-xl" />
+        </div>
       </div>
     </div>
   );

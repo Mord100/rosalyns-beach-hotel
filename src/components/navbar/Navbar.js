@@ -9,8 +9,8 @@ function Navbar() {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className={`flex bg-transparent justify-between fixed items-center w-full h-20 mx-auto z-50 md:px-20 px-8 text-white ${nav ? '' : 'bg-transparent'}`}>
-      <h2 className={`font-bold  font-serif text-2xl bg-[#E0B973] pt-8 rounded-b-3xl p-5 cursor-pointer ${nav ? '' : 'text-white'}`}>Rosalyn's
+    <div className={`flex bg-white justify-between border-b fixed items-center w-full h-16 mx-auto z-50 md:px-20 px-8 md:text-gray-800 ${nav ? '' : 'bg-white'}`}>
+      <h2 className={`font-bold  font-serif text-2xl  bg-[#E0B973] pt-8 rounded-b-3xl p-5 cursor-pointer ${nav ? 'text-white' : 'text-white'}`}>Rosalyn's
       <p className="text-sm pl-2 mx-auto font-normal">B e a c h H o t e l</p>
       </h2>
       <ul className='hidden  md:flex'>
@@ -24,8 +24,8 @@ function Navbar() {
         {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />}
       </div>
 
-      <ul className={`${nav ? 'fixed top-0 left-0 w-[60%] h-full bg-gray-200 ease-in-out duration-500' : 'fixed left-[-100%] ease-in-out duration-500'} z-50 shadow-md text-black`}>
-        <h2 className='w-full text-2xl font-bold text-black m-4 cursor-pointer'>Rosalyn's</h2>
+      <ul className={`${nav ? 'fixed top-0   left-0 w-[60%] h-full bg-gray-100 ease-in-out duration-500' : 'fixed left-[-100%] ease-in-out duration-500'} z-50 shadow-md text-gray-800`}>
+        <h2 className='w-full text-2xl font-bold text-gray-800 m-4 cursor-pointer'>Rosalyn's</h2>
         <div className='px-8'>
 
         <Link to='home' smooth={true} duration={500} className="p-4 border-b border-gray-300 cursor-pointer" onClick={() => setNav(false)}><li>Home</li></Link>
