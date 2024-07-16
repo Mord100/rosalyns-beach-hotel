@@ -91,7 +91,13 @@ function Destinations() {
 
     return (
         <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 bg-[#F3F4F6]">
-            <div className="container">
+            <div className="container ">
+            {/* <h1 className='font-serif mx-auto align-middle text-gray-800 border-b-2' data-aos="fade-up">Rooms & Rates</h1> */}
+                <p className='text-gray-700 py-4' data-aos="fade-up" data-aos-delay="200">
+                    Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Mangochi. 
+                    Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
+                    all tastes.
+                </p>
                 <div className="flex flex-col space-y-10">
                     {rooms.map((room, index) => (
                         <div className="md:w-[80%] mx-auto" key={index}>

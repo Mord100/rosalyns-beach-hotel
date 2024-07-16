@@ -43,7 +43,7 @@ function Testimonials() {
             className="bg-[#E0B973] text-white p-2 rounded mx-1" 
             onClick={handlePrevious}
           >
-            <MdArrowBackIos />
+            <MdArrowBackIos className='pl-0.5' />
           </div>
           <div
             className="bg-[#E0B973] text-white p-2 rounded mx-1" 
