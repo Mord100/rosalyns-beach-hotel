@@ -36,6 +36,11 @@ li {
     cursor: pointer;
 }
 
+.active-link {
+    color: blue; /* Change this to your preferred active color */
+    font-weight: bold; /* Optional: to make the active link stand out */
+  }
+  
 
 @media screen and (max-width: 940px) {
 

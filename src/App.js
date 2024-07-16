@@ -1,25 +1,27 @@
-import React from 'react'
-import ImgCarousel from './components/carousel/ImgCarousel';
-import Destinations from './components/destinations/Destinations'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Hero from './components/hero/Hero'
-import Navbar from './components/navbar/Navbar'
-import Features from './components/features/Features'
-import Selects from './components/selects/Selects';
+import Home from './pages/Home';
+import Facilities from './pages/Facilities';
+import Rooms from './pages/Rooms';
+import Contact from './pages/Contact';
 import Testimonials from './components/testimonials/Testimonials';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <Hero />
-      <Destinations />
-      <Features/>
-      <Selects />
-      {/* <ImgCarousel /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/facilities" element={<Facilities />} />
+        <Route path="/rooms" element={<Rooms />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Testimonials/>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
