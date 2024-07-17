@@ -1,6 +1,8 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa';
+import { FaAddressBook } from "react-icons/fa6";
+
 
 import Hero1 from '../../assets/WhatsApp Image 2024-06-30 at 18.37.54.jpeg';
 
@@ -16,8 +18,8 @@ function Hero() {
         <h1 className='text-white text-3xl md:text-7xl font-serif font-medium mt-1'>B e a c h H o t e l</h1>
         <p className='text-white text-xl md:text-3xl capitalize'>Experience The Difference.</p>
 
-        <div className='mt-16 mx-auto cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 rounded-md shadow hover:bg-gray-700 transition duration-300'>
-          BOOK
+        <div className='mt-16 flex gap-2 mx-auto cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 rounded-md shadow hover:bg-gray-700 transition duration-300'>
+          < FaAddressBook size={20}/>BOOK
         </div>
 
         <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center'>

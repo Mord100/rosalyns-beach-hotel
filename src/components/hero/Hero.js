@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa';
+import { FaHotel } from "react-icons/fa";
 
 import Hero1 from '../../assets/IMG_0547.jpg';
 
@@ -16,8 +17,8 @@ function Hero() {
         <h1 className='text-white text-3xl md:text-7xl font-serif font-medium mt-1'>B e a c h H o t e l</h1>
         <p className='text-white text-xl md:text-3xl capitalize'>Experience The Difference.</p>
 
-        <div className='mt-16 mx-auto cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 rounded-md shadow hover:bg-gray-700 transition duration-300'>
-          Explore
+        <div className='mt-16 gap-2 mx-auto flex cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 rounded-md shadow hover:bg-gray-700 transition duration-300'>
+         < FaHotel size={20} /> Explore
         </div>
 
         <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center'>

@@ -20,10 +20,10 @@ function Navbar() {
         <p className="text-sm pl-2 mx-auto font-normal">B e a c h H o t e l</p>
       </a>
       <ul className="hidden md:flex">
-        <NavLink to='/home' className={({ isActive }) => isActive ? "px-4 cursor-pointer  font-bold" : "px-4 cursor-pointer"}><li>Home</li></NavLink>
-        <NavLink to='/facilities' className={({ isActive }) => isActive ? "px-4 cursor-pointer font-bold" : "px-4 cursor-pointer"}><li>Facilities</li></NavLink>
-        <NavLink to='/rooms' className={({ isActive }) => isActive ? "px-4 cursor-pointer font-bold" : "px-4 cursor-pointer"}><li>Rooms</li></NavLink>
-        <NavLink to='/contact' className={({ isActive }) => isActive ? "px-4 cursor-pointer font-bold" : "px-4 cursor-pointer"}><li>Contact Us</li></NavLink>
+        <NavLink to='/home' className={({ isActive }) => isActive ? "px-4 cursor-pointer transition duration-600  font-bold" : "px-4 cursor-pointer"}><li>Home</li></NavLink>
+        <NavLink to='/facilities' className={({ isActive }) => isActive ? "px-4 cursor-pointer transition duration-600 font-bold" : "px-4 cursor-pointer"}><li>Facilities</li></NavLink>
+        <NavLink to='/rooms' className={({ isActive }) => isActive ? "px-4 cursor-pointer transition duration-600 font-bold" : "px-4 cursor-pointer"}><li>Rooms</li></NavLink>
+        <NavLink to='/contact' className={({ isActive }) => isActive ? "px-4 cursor-pointer transition duration-600 font-bold" : "px-4 cursor-pointer"}><li>Contact Us</li></NavLink>
       </ul>
 
       <div onClick={handleNav} className="md:hidden">

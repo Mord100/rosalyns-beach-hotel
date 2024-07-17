@@ -24,8 +24,8 @@ function Destinations() {
     return (
         <div name='destinations' className='destinations'>
             <div className="container">
-                <h1 className='font-serif text-gray-800 border-b-2' data-aos="fade-up">Facilities</h1>
-                <p className='text-gray-700 py-4' data-aos="fade-up" data-aos-delay="200">
+            <h1 className='font-serif mx-auto align-middle text-gray-800 border-b-4 inline-block' data-aos="fade-up">Facilities</h1>
+            <p className='text-gray-700 py-4' data-aos="fade-up" data-aos-delay="200">
                     Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Mangochi. 
                     Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
                     all tastes.

@@ -90,10 +90,10 @@ function Destinations() {
     ];
 
     return (
-        <section className="pt-20 lg:pt-[120px] pb-10 lg:pb-20 bg-[#F3F4F6]">
-            <div className="container ">
-            {/* <h1 className='font-serif mx-auto align-middle text-gray-800 border-b-2' data-aos="fade-up">Rooms & Rates</h1> */}
-                <p className='text-gray-700 py-4' data-aos="fade-up" data-aos-delay="200">
+        <section className="pt-10 pb-10 lg:pb-20 bg-[#F3F4F6]">
+            <div className="container text-center">
+                <h1 className='font-serif mx-auto text-gray-800 border-b-4 inline-block' data-aos="fade-up">Rooms & Rates</h1>
+                <p className='text-gray-700 py-4 mx-auto max-w-screen-md' data-aos="fade-up" data-aos-delay="200">
                     Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Mangochi. 
                     Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
                     all tastes.
@@ -113,9 +113,6 @@ function Destinations() {
                                             {room.label}
                                         </span>
                                     </h3>
-                                    {/* <p className="text-base p-8 text-body-color leading-relaxed mb-7">
-                                        {room.description}
-                                    </p> */}
                                     <div className="flex flex-wrap font-sans justify-center pt-4 px-8 pb-8">
                                         {room.amenities.map((amenity, idx) => (
                                             <div key={idx} className="flex items-center text-gray-600 mr-4 mb-2">
@@ -124,7 +121,7 @@ function Destinations() {
                                             </div>
                                         ))}
                                     </div>
-                                    <span className="text-lg  p-4 w-30 font-semibold text-gray-800 mb-8 block">{room.rate}</span>
+                                    <span className="text-lg p-4 w-30 font-semibold text-gray-800 mb-8 block">{room.rate}</span>
                                 </div>
                             </div>
                         </div>
