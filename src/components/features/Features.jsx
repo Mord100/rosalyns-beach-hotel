@@ -1,63 +1,52 @@
-import Image5 from '../../assets/WhatsApp Image 2024-06-30 at 18.37.54 (1).jpeg';
+import React from 'react';
 
-const features = [
-  {
-    title: 'Private Paradise',
-    description:
-      'Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.',
-  },
-  {
-    title: 'Luxury Comfort',
-    description:
-      'Indulge in luxury and comfort with our meticulously designed rooms, offering modern amenities and stunning views to elevate your stay.',
-  },
-];
-
-export default function Example() {
+const Plan = () => {
   return (
-    <div className="overflow-hidden bg-slate-100 py-24 lg:px-20 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto border-l-4 px-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-12 lg:pt-4">
-            <div className="lg:max-w-lg">
-              <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-gray-900 sm:text-4xl">Luxury Redefined</p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature, index) => (
-                  <div key={index} className="relative">
-                    <dt className="font-medium text-gray-900">{feature.title}</dt>
-                    <dd className="inline mt-2">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-          <img
-            alt="Luxury room"
-            src={Image5}
-            className="w-full h-auto rounded-xl shadow-xl object-cover lg:ml-12"
-          />
-        </div>
-        <div className="mx-auto py-10 border-l-4 px-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div className="lg:pr-12 lg:pt-4">
-            <div className="lg:max-w-lg">
-              <p className="mt-2 text-3xl font-bold font-serif tracking-tight text-gray-900 sm:text-4xl">Unparalleled Experience</p>
-              <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature, index) => (
-                  <div key={index} className="relative">
-                    <dt className="font-medium text-gray-900">{feature.title}</dt>
-                    <dd className="inline mt-2">{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-          <img
-            alt="Luxury room"
-            src={Image5}
-            className="w-full h-auto rounded-xl shadow-xl object-cover lg:ml-12"
-          />
+    <div className=' m-auto w-full py-16  px-3 md:px-40 grid lg:grid-cols-2 gap-4'>
+      {/* Left Side */}
+      <div className='grid rounded-md grid-cols-2 grid-rows-6 h-[80vh]'>
+        <img
+          className='row-span-3 rounded-md object-cover w-full h-full p-2'
+          src='https://images.unsplash.com/photo-1506929562872-bb421503ef21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1368&q=80'
+          alt='/'
+        />
+        <img
+          className='row-span-2 object-cover w-full h-full p-2'
+          src='https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80'
+          alt='/'
+        />
+        <img
+          className='row-span-2 object-cover w-full h-full p-2'
+          src='https://images.unsplash.com/photo-1515238152791-8216bfdf89a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1772&q=80'
+          alt='/'
+        />
+        <img
+          className='row-span-3 object-cover w-full h-full p-2'
+          src='https://images.unsplash.com/photo-1468413253725-0d5181091126?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+          alt='/'
+        />
+        <img
+          className='row-span-2 object-cover w-full h-full p-2'
+          src='https://images.unsplash.com/photo-1473186578172-c141e6798cf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1673&q=80'
+          alt='/'
+        />
+      </div>
+      {/* Right Side */}
+      <div className='flex flex-col md:items-start h-full justify-center'>
+        <h3 className='text-5xl md:text-6xl text-gray-800 font-serif font-bold'>Luxury Redefined</h3>
+        <p className='text-2xl text-gray-700 text-start py-6'>
+        Indulge in luxury and comfort with our meticulously designed rooms, offering modern amenities and stunning views to elevate your stay.
+        </p>
+        <p className='pb-6 text-gray-700 text-start'>
+        Our rooms are designed to transport you into an environment made for leisure. Take your mind off the day-to-day of home life and find a private paradise for yourself.
+        </p>
+        <div>
+        
+          <button className='bg-gray-900 text-white py-2 px-4 rounded-md hover:shadow-xl'>Book</button>
         </div>
       </div>
     </div>
   );
-}
+};
+
+export default Plan;

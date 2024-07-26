@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Facilities from './pages/Facilities';
 import Rooms from './pages/Rooms';
 import Contact from './pages/Contact';
+import Restaurant from './pages/Restaurant';
 import Testimonials from './components/testimonials/Testimonials';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/facilities" element={<Facilities />} />
         <Route path="/rooms" element={<Rooms />} />
+        <Route path="/restaurant" element={<Restaurant />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Testimonials/>

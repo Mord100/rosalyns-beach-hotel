@@ -6,6 +6,8 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import logo from '../../assets/logo2.png';
+
 
 function Footer() {
   return (
@@ -13,15 +15,14 @@ function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-3xl font-serif font-bold mb-4">
-              Rosalyn's
-              <p className="text-sm font-normal">B e a c h H o t e l</p>
-            </h3>
-            <ul className="space-y-2">
+          <div href='/' className="cursor-pointer">
+        <img src={logo} alt="Logo" className="h-20" />
+        </div>
+            {/* <ul className="space-y-2">
               <li>Address: </li>
               <li>Phone: </li>
               <li>Email: Rosalynsbeachhotel@gmail.com</li>
-            </ul>
+            </ul> */}
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
@@ -42,9 +43,9 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li className="hover:text-gray-400 transition duration-300">Support</li>
-              <li className="hover:text-gray-400 transition duration-300">FAQ</li>
-              <li className="hover:text-gray-400 transition duration-300">Site Map</li>
+              <li className="hover:text-gray-400 transition duration-300">Home</li>
+              <li className="hover:text-gray-400 transition duration-300">Facilities</li>
+              <li className="hover:text-gray-400 transition duration-300">Rooms</li>
             </ul>
           </div>
         </div>
