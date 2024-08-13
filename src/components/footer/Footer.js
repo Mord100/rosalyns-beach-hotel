@@ -11,7 +11,7 @@ import logo from '../../assets/logo2.png';
 
 function Footer() {
   return (
-    <div className="bg-gray-800 text-white py-10">
+    <div className="bg-[#1d1d1b] text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div>
@@ -26,7 +26,7 @@ function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li className="hover:text-gray-400 transition duration-300">About</li>
               <li className="hover:text-gray-400 transition duration-300">Contact</li>
               <li className="hover:text-gray-400 transition duration-300">Policy</li>
@@ -34,7 +34,7 @@ function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Support</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li className="hover:text-gray-400 transition duration-300">Support</li>
               <li className="hover:text-gray-400 transition duration-300">FAQ</li>
               <li className="hover:text-gray-400 transition duration-300">Site Map</li>
@@ -42,14 +42,14 @@ function Footer() {
           </div>
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-sm">
               <li className="hover:text-gray-400 transition duration-300">Home</li>
               <li className="hover:text-gray-400 transition duration-300">Facilities</li>
               <li className="hover:text-gray-400 transition duration-300">Rooms</li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+        <div className="mt-8 border-t text-sm border-gray-700 pt-4 text-center">
           <p className="hover:text-gray-400 transition duration-300">
             Privacy Policy | Developed By Divdynamics
           </p>

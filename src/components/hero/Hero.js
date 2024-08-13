@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className='relative h-[90vh]'>
       <img src={Hero1} alt="Hero Background" className='absolute inset-0 object-cover w-full h-full' />
-      <div className='absolute inset-0 bg-gradient-to-b from-blue-400 via-teal-300 to-yellow-200 opacity-50'></div>
+      <div className='absolute inset-0 bg-gradient-to-b from-blue-400 via-teal-300 to-yellow-200 opacity-70'></div>
 
       <div className='relative z-10 flex flex-col items-start pt-40 h-full md:px-20 p-8'>
         <p className='text-white text-xl md:text-3xl capitalize'>WELCOME TO</p>
