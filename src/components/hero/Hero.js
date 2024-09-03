@@ -2,6 +2,8 @@ import React from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa';
 import { FaHotel } from "react-icons/fa";
+import { BiSolidDownArrow } from "react-icons/bi";
+
 
 import Hero1 from '../../assets/hero1.jpg';
 
@@ -23,7 +25,7 @@ function Hero() {
         </div>
 
         <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center'>
-          <FaArrowDown className='text-white text-2xl' />
+          <BiSolidDownArrow className='text-white text-2xl' />
           <p className='text-white text-md ml-2'>Scroll</p>
         </div>
       </div>

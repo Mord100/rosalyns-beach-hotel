@@ -5,6 +5,7 @@ import Features from '../components/features/Features';
 import Selects from '../components/selects/Selects';
 import Testimonials from '../components/testimonials/Testimonials';
 import Icons from '../components/icons/Icons';
+import Banner from '../components/features/Banner';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       {/* <Icons/> */}
       <Destinations />
       <Features />
+      <Banner/>
       <Selects />
       {/* <ImgCarousel /> */}
       {/* <Testimonials /> */}
