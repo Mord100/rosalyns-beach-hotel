@@ -1,39 +1,130 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import './DestinationsStyles.css';
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./DestinationsStyles.css";
+import Image1 from "../../assets/DSC05409.jpg"
+import Image2 from "../../assets/DSC06350.jpg"
+import Image3 from "../../assets/DSC06040.jpg"
+import Image4 from "../../assets/DSC05640.jpg"
+import Image5 from "../../assets/DSC06325.jpg"
 
-import Image1 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.03.jpeg';
-import Image2 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.00 (1).jpeg';
-import Image3 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.05 (1).jpeg';
-import Image4 from '../../assets/WhatsApp Image 2024-06-30 at 18.37.55.jpeg';
-import Image5 from '../../assets/WhatsApp Image 2024-06-30 at 18.37.54 (1).jpeg';
+
+
+
+
+
 
 function Destinations() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
-    return (
-        <div name='destinations' className='destinations'>
-            <div className="container">
-            <h1 className='font-serif mx-auto align-middle text-gray-800 border-b-4 inline-block' data-aos="fade-up">All Inclusive Resort</h1>
-            <p className='text-gray-700 py-4' data-aos="fade-up" data-aos-delay="200">
-                    Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Mangochi. 
-                    Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
-                    all tastes. Whether you're looking to unwind on the beach, explore the local culture, or indulge in water sports, our 
-                    resort offers everything you need for an unforgettable getaway.
-                </p>
-                <div className="img-container" data-aos="fade-up" data-aos-delay="400">
-                    <img className='span-3 rounded-md image-grid-row-2' src={Image1} alt="Beach view" data-aos="zoom-in" />
-                    <img className='rounded-md' src={Image2} alt="Resort" data-aos="zoom-in" data-aos-delay="100" />
-                    <img className='rounded-md' src={Image3} alt="Dining" data-aos="zoom-in" data-aos-delay="200" />
-                    <img className='rounded-md' src={Image4} alt="Activities" data-aos="zoom-in" data-aos-delay="300" />
-                    <img className='rounded-md' src={Image5} alt="Sunset" data-aos="zoom-in" data-aos-delay="400" />
-                </div>
-            </div>
+  return (
+    <div name="destinations" className="">
+      <div className="">
+        <div class="w-full md:flex py-10 max-w-screen-xl md:flex-col-2 gap-4 mx-auto text-center">
+          <h2 class="text-3xl font-bold leading-tight text-[#1d1d1b] sm:text-4xl lg:text-5xl lg:leading-tight">
+            All Inclusive Resort
+          </h2>
+          <p class="max-w-2xl mx-auto md:text-left mt-4 text-md text-[#1d1d1b">
+          Discover the perfect blend of relaxation and luxury at Rosalyn's Beach Hotel. Located on the stunning coastline, 
+          our hotel offers breathtaking lake views, comfortable accommodations, and unparalleled service. 
+
+<br/><br/>
+            <span>Whether you're here 
+          to unwind, explore, or celebrate, Rosalyn's Beach Hotel is your gateway to an unforgettable beachside experience.</span>
+          </p>
+
+          
         </div>
-    );
+
+        <section class="bg-white w-full py-10">
+          <div class="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+              <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+                <a
+                  href=""
+                  class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
+                >
+                  <img
+                    src={Image1}
+                    alt=""
+                    class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                    Wines
+                  </h3>
+                </a>
+              </div>
+              <div class="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+                <a
+                  href=""
+                  class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
+                >
+                  <img
+                    src={Image2}
+                    alt=""
+                    class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                    Boardroom
+                  </h3>
+                </a>
+                <div class="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+                  <a
+                    href=""
+                    class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                  >
+                    <img
+                      src={Image5}
+                      alt=""
+                      class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                      Text
+                    </h3>
+                  </a>
+                  <a
+                    href=""
+                    class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                  >
+                    <img
+                      src={Image4}
+                      alt=""
+                      class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                    <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                      Text
+                    </h3>
+                  </a>
+                </div>
+              </div>
+              <div class="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+                <a
+                  href=""
+                  class="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
+                >
+                  <img
+                    src={Image3}
+                    alt=""
+                    class="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 class="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                    Text
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 }
 
 export default Destinations;

@@ -16,7 +16,7 @@ function Navbar() {
   }, [location.pathname]);
 
   return (
-    <div className="flex justify-between items-center w-full h-16 mx-auto fixed bg-white border-b z-50 px-8 md:px-20 md:text-gray-800">
+    <div className="flex justify-between items-center w-full h-16 mx-auto text-sm fixed bg-white border-b z-50 px-8 md:px-20 md:text-gray-800">
       <Link to='/' className="pt-8 rounded-b-3xl py-5 cursor-pointer">
         <img src={logo} alt="Logo" className="h-10" />
       </Link>
