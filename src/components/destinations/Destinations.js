@@ -48,11 +48,11 @@ function Destinations() {
             <br />
             <div className="mb-2 mx-auto text-[#E0B973]">
               <div className="flex gap-2">
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
-                <MdOutlineStarPurple500 />
+                <MdOutlineStarPurple500 size={20}/>
+                <MdOutlineStarPurple500 size={20}/>
+                <MdOutlineStarPurple500 size={20}/>
+                <MdOutlineStarPurple500 size={20}/>
+                <MdOutlineStarPurple500 size={20}/>
               </div>
             </div>
             <span>

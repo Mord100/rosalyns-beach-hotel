@@ -90,18 +90,18 @@ function Destinations() {
     ];
 
     return (
-        <section className="pt-10 pb-10 lg:pb-20 bg-[#F3F4F6]">
+        <section className="pt-10 pb-10 lg:pb-20 font-source bg-[#F3F4F6]">
             <div className="container text-center">
-                <h1 className='font-serif mx-auto text-gray-800 border-b-4 inline-block' data-aos="fade-up">Rooms & Rates</h1>
-                <p className='text-gray-700 py-4 mx-auto max-w-screen-md' data-aos="fade-up" data-aos-delay="200">
-                    Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Mangochi. 
+                <h1 className='font-source mx-auto text-[#1d1d1b]border-b-4 inline-block' data-aos="fade-up">Rooms & Rates</h1>
+                <p className='text-gray-600 font-source py-4 mx-auto max-w-screen-md' data-aos="fade-up" data-aos-delay="200">
+                    Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Malawi. 
                     Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
                     all tastes.
                 </p>
                 <div className="flex flex-col space-y-10">
                     {rooms.map((room, index) => (
                         <div className="md:w-[80%] mx-auto" key={index}>
-                            <div className="bg-white rounded-lg overflow-hidden" data-aos="zoom-in" data-aos-delay={index * 100}>
+                            <div className="bg-white border overflow-hidden" data-aos="zoom-in" data-aos-delay={index * 100}>
                                 <img
                                     src={room.src}
                                     alt={room.alt}
@@ -109,7 +109,7 @@ function Destinations() {
                                 />
                                 <div className="text-center">
                                     <h3>
-                                        <span className="font-semibold p-4 bg-gray-800 text-white w-full text-xl sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] mb-4 block">
+                                        <span className="font-semibold p-4 bg-[#1d1d1b] text-white w-full text-xl sm:text-[22px] md:text-xl lg:text-[22px] xl:text-xl 2xl:text-[22px] mb-4 block">
                                             {room.label}
                                         </span>
                                     </h3>
@@ -121,7 +121,7 @@ function Destinations() {
                                             </div>
                                         ))}
                                     </div>
-                                    <span className="text-lg p-4 w-30 font-semibold text-gray-800 mb-8 block">{room.rate}</span>
+                                    <span className="text-lg p-4 w-30 font-semibold text-gray-900 mb-8 block">{room.rate}</span>
                                 </div>
                             </div>
                         </div>
