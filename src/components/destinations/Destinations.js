@@ -12,12 +12,12 @@ function Destinations() {
   // Animation variants for the sections
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   const staggerContainer = {
     hidden: {},
-    visible: { transition: { staggerChildren: 0.2 } }
+    visible: { transition: { staggerChildren: 0.2 } },
   };
 
   return (
@@ -46,13 +46,13 @@ function Destinations() {
             unparalleled service.
             <br />
             <br />
-            <div className="mb-2 mx-auto text-[#E0B973]">
+            <div className="mb-2 flex justify-center md:justify-start text-[#E0B973]">
               <div className="flex gap-2">
-                <MdOutlineStarPurple500 size={20}/>
-                <MdOutlineStarPurple500 size={20}/>
-                <MdOutlineStarPurple500 size={20}/>
-                <MdOutlineStarPurple500 size={20}/>
-                <MdOutlineStarPurple500 size={20}/>
+                <MdOutlineStarPurple500 size={20} />
+                <MdOutlineStarPurple500 size={20} />
+                <MdOutlineStarPurple500 size={20} />
+                <MdOutlineStarPurple500 size={20} />
+                <MdOutlineStarPurple500 size={20} />
               </div>
             </div>
             <span>
@@ -63,13 +63,13 @@ function Destinations() {
           </motion.p>
         </motion.div>
 
-        <section className="bg-white w-full py-10">
+        <section className="bg-white w-full">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            className="py-4 px-2 mx-auto max-w-screen-xl sm:py-4 lg:px-6"
+            className="py-4 px-2 mx-auto max-w-screen-xl lg:px-6"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
               <motion.div
