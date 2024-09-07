@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import { MdArrowBackIos } from "react-icons/md";
-import { MdOutlineArrowRight, MdArrowForwardIos } from "react-icons/md";
+import React, { useState, useEffect } from 'react';
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 
 const testimonialsData = [
   {
@@ -23,34 +21,56 @@ const testimonialsData = [
 
 function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [currentIndex]);
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonialsData.length);
+      setTimeout(() => setIsAnimating(false), 500);
+    }
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonialsData.length) % testimonialsData.length);
+    if (!isAnimating) {
+      setIsAnimating(true);
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonialsData.length) % testimonialsData.length);
+      setTimeout(() => setIsAnimating(false), 500);
+    }
   };
 
   return (
-    <div className=" py-12 px-4">
-      <div className="max-w-3xl mx-auto  p-8 text-center">
-        <p className="text-xl font-semibold  text-gray-600 mb-4">"{testimonialsData[currentIndex].review}"</p>
-        <p className="text-lg font-semibold text-gray-800">{testimonialsData[currentIndex].name}</p>
-        <p className="text-sm text-gray-500">{testimonialsData[currentIndex].location}</p>
-        <div className="flex justify-center mt-6">
-          <div 
-            className="bg-[#E0B973] text-white p-2 rounded mx-1" 
+    <div className="bg-white py-16 px-4">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-source font-semibold text-gray-800 mb-12">Testimonials</h2>
+        <div className={`transition-opacity duration-500 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+          <p className="text-xl text-gray-700 mb-6">"{testimonialsData[currentIndex].review}"</p>
+          <p className="text-lg font-light text-gray-600">{testimonialsData[currentIndex].name}</p>
+          <p className="text-sm text-gray-500">{testimonialsData[currentIndex].location}</p>
+        </div>
+        <div className="flex justify-center mt-8">
+          <button 
+            className="text-gray-400 p-2 mx-2 hover:text-gray-600 transition-colors duration-300" 
             onClick={handlePrevious}
+            aria-label="Previous testimonial"
           >
-            <MdArrowBackIos className='pl-0.5' />
-          </div>
-          <div
-            className="bg-[#E0B973] text-white p-2 rounded mx-1" 
+            <MdArrowBackIos className='text-2xl' />
+          </button>
+          <button
+            className="text-gray-400 p-2 mx-2 hover:text-gray-600 transition-colors duration-300" 
             onClick={handleNext}
+            aria-label="Next testimonial"
           >
-            <MdArrowForwardIos />
-          </div>
+            <MdArrowForwardIos className='text-2xl' />
+          </button>
         </div>
       </div>
     </div>

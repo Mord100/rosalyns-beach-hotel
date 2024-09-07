@@ -63,7 +63,7 @@ const Tabs = ({ color }) => {
           </li>
         </ul>
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-sm rounded">
-          <div className="px-4 py-5 flex-auto">
+          <div className=" py-5 flex-auto">
             <div className="tab-content tab-space">
               <div className={openTab === 1 ? "block" : "hidden"} id="food">
                 <img src={foodMenuImage} alt="Drinks Menu" className="mt-4 max-w-full h-auto rounded-md shadow-md" />

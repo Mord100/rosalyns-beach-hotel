@@ -26,8 +26,9 @@ function Destinations() {
     return (
         <div name='destinations' className='destinations'>
             <div className="container">
-            <h1 className='font-source mx-auto align-middle text-[#1d1d1b] inline-block' data-aos="fade-up">Facilities</h1>
-            <p className='text-gray-600 font-inter py-4' data-aos="fade-up" data-aos-delay="200">
+            <h1 className='font-source text-4xl font-light text-[#1d1d1b] mb-2 text-center' data-aos="fade-up">Facilities</h1>
+            <div className='w-24 h-1 bg-[#E0B973] mx-auto mb-8' data-aos="fade-up" data-aos-delay="100"></div>
+                    <p className='text-gray-600 font-inter py-4' data-aos="fade-up" data-aos-delay="200">
                     Experience the ultimate relaxation at our all-inclusive beach resort located on the pristine shores of Lake Malawi. 
                     Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
                     all tastes.
