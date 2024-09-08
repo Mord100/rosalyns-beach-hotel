@@ -48,7 +48,6 @@ function Navbar() {
           <FaInstagram className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
           <FaTwitter className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
           <FaPinterest className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
-          <FaYoutube className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
         </div>
       </ul>
     </div>

@@ -8,6 +8,14 @@ import { BiSolidDownArrow } from "react-icons/bi";
 import Hero1 from '../../assets/hero1.jpg';
 
 function Hero() {
+  const handleScroll = () => {
+    const scrollTarget = window.innerHeight * 0.8; // Scroll only 50% of the viewport height
+    window.scrollTo({
+      top: scrollTarget,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div className='relative h-[90vh]'>
       <img src={Hero1} alt="Hero Background" className='absolute inset-0 object-cover w-full h-full' />
@@ -24,7 +32,7 @@ function Hero() {
          < FaHotel size={20} /> Explore
         </div>
 
-        <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center'>
+        <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center' onClick={handleScroll}>
           <BiSolidDownArrow className='text-white text-2xl' />
           <p className='text-white text-md ml-2'>Scroll</p>
         </div>

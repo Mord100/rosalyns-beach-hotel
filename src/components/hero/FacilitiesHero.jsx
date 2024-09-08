@@ -23,11 +23,6 @@ function Hero() {
         <div className='mt-16 gap-2 mx-auto flex cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 shadow hover:bg-[#1d1d1b] transition duration-300'>
          < FaHotel size={20} /> Book
         </div>
-
-        <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center'>
-          <BiSolidDownArrow className='text-white text-2xl' />
-          <p className='text-white text-md ml-2'>Scroll</p>
-        </div>
       </div>
     </div>
   );

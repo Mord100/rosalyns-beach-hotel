@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGps } from "react-icons/tb";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 Modal.setAppElement('#root');
 
@@ -17,19 +18,25 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="bg-slate-50 py-12">
-      <div className="px-4 mx-auto max-w-screen-lg flex flex-col lg:flex-row">
-        <div className="lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
-          <div className="mb-6">
-            <h3 className="text-2xl font-semibold text-[#1d1d1b]">Contact Details</h3>
-            <p className="mt-2 text-gray-600">Email: contact@example.com</p>
-            <p className="text-gray-600">Phone: +123 456 7890</p>
-            <p
-              className="mt-4 py-2 gap-2 flex cursor-pointer hover:underline text-sm font-semibold text-[#1d1d1b]"
+    <section className="bg-slate-50 py-16">
+      <div className="px-4 mx-auto max-w-screen-xl flex flex-col lg:flex-row">
+        <div className="lg:w-1/2 pr-0 lg:pr-12 mb-12 lg:mb-0">
+          <div className="mb-8">
+            <h2 className="text-3xl font-bold text-[#1d1d1b] mb-6">Get in Touch</h2>
+            <h3 className="text-2xl font-semibold text-[#1d1d1b] mb-4">Contact Details</h3>
+            <p className="flex items-center mt-2 text-gray-600">
+              <FaEnvelope className="mr-2" /> contact@rosalynbeachhotel.com
+            </p>
+            <p className="flex items-center text-gray-600 mt-2">
+              <FaPhone className="mr-2" /> +265 999 123 456
+            </p>
+            <p className="mt-2 text-gray-600">Mangochi, Malawi</p>
+            <button
+              className="mt-6 py-2 px-4 flex items-center cursor-pointer bg-[#E0B973] text-white  hover:bg-[#1d1d1b] transition duration-300"
               onClick={openModal}
             >
-              <TbGps size={20} className='' /> View Map
-            </p>
+              <TbGps size={20} className="mr-2" /> View Map
+            </button>
           </div>
         </div>
         <div className="lg:w-1/2">
@@ -39,7 +46,7 @@ const ContactUs = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1d1d1b]"
+                className="w-full px-4 py-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#E0B973]"
                 required
               />
             </div>
@@ -48,7 +55,7 @@ const ContactUs = () => {
               <input
                 type="email"
                 id="email"
-                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1d1d1b]"
+                className="w-full px-4 py-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#E0B973]"
                 required
               />
             </div>
@@ -57,7 +64,7 @@ const ContactUs = () => {
               <input
                 type="tel"
                 id="phone"
-                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1d1d1b]"
+                className="w-full px-4 py-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#E0B973]"
                 required
               />
             </div>
@@ -66,32 +73,32 @@ const ContactUs = () => {
               <textarea
                 id="message"
                 rows="6"
-                className="w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1d1d1b]"
-                placeholder="Leave a message..."
+                className="w-full px-4 py-3 border border-gray-300  focus:outline-none focus:ring-2 focus:ring-[#E0B973]"
+                placeholder="How can we help you?"
                 required
               ></textarea>
             </div>
             <button
               type="submit"
-              className="py-3 px-6 text-sm font-medium text-white bg-[#1d1d1b] hover:bg-opacity-90 transition duration-300"
+              className="w-full py-3 px-6 text-sm font-medium text-white bg-[#E0B973] hover:bg-[#1d1d1b] transition duration-300 "
             >
-              Submit
+              Send Message
             </button>
           </form>
         </div>
       </div>
-      <div className="z-50 sm:p-8">
+      <div className="z-50">
         <Modal
           isOpen={isModalOpen}
           onRequestClose={closeModal}
           contentLabel="Map Modal"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl bg-white p-6 rounded-lg shadow-lg"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl bg-white p-6 shadow-lg"
           overlayClassName="fixed inset-0 bg-black bg-opacity-50"
         >
-          <IoMdCloseCircle size={30} onClick={closeModal} className="absolute cursor-pointer top-4 right-4 text-[#1d1d1b]"/>
+          <IoMdCloseCircle size={30} onClick={closeModal} className="absolute cursor-pointer top-4 right-4 text-[#1d1d1b] hover:text-[#E0B973]"/>
           <div className="w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509619!2d144.95373531531824!3d-37.8162799797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5770d1a4c9e32d!2sVictoria!5e0!3m2!1sen!2sau!4v1649392258327!5m2!1sen!2sau"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122232.74339045703!2d35.19401611640625!3d-14.479654899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d8c1a6e2b2c9b5%3A0x5b5a9e3d8b3f8d3a!2sMangochi%2C%20Malawi!5e0!3m2!1sen!2sus!4v1649392258327!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
