@@ -17,42 +17,32 @@ function Rooms() {
 
     const rooms = [
         {
-            src: Image1,
-            alt: 'Deluxe Room with Beach View',
-            label: 'Deluxe Room',
-            description: 'Spacious room with beach views and luxurious amenities.',
-            rate: 'MWK 100,000 / Night',
-            amenities: [
-                { icon: <FaBed />, text: 'King-sized Bed' },
-                { icon: <FaWifi />, text: 'High-speed WiFi' },
-                { icon: <FaBath />, text: 'Luxury Bathroom' },
-                { icon: <FaSwimmingPool />, text: 'Pool Access' },
-            ]
-        },
-        {
-            src: Image2,
-            alt: 'Superior Room with Garden View',
-            label: 'Superior Room',
-            description: 'Elegant room with garden view and modern comforts.',
-            rate: 'MWK 80,000 / Night',
+            src: Image3,
+            alt: 'VIP Beach Front Villa',
+            label: 'VIP Beach Front Villa',
+            description: '2 rooms accommodates 4 people. With a Launge and Kitchen ',
+            rate: 'MWK 460,000 / Night',
             amenities: [
                 { icon: <FaBed />, text: 'Queen-sized Bed' },
+                { icon: <FaWifi />, text: 'DSTV & Netflix' },
                 { icon: <FaWifi />, text: 'Free WiFi' },
-                { icon: <FaBath />, text: 'En-suite Bathroom' },
-                { icon: <FaConciergeBell />, text: '24/7 Room Service' },
+                { icon: <FaBath />, text: 'Bathroom' },
+                { icon: <FaUtensils />, text: 'Kitchen' },
             ]
         },
+
         {
             src: Image3,
             alt: 'Executive Suite',
             label: 'Executive Suite',
-            description: 'Luxurious suite with panoramic views and exclusive amenities.',
-            rate: 'MWK 150,000 / Night',
+            description: 'Luxurious suite with panoramic views and exclusive amenities. Bed and Breaskfast for the maximum 2 people',
+            rate: 'MWK 210,000 / Night',
             amenities: [
                 { icon: <FaBed />, text: 'King-sized Bed' },
-                { icon: <FaWifi />, text: 'Ultra-fast WiFi' },
-                { icon: <FaBath />, text: 'Jacuzzi Tub' },
-                { icon: <FaUtensils />, text: 'Mini Kitchen' },
+                { icon: <FaWifi />, text: 'Free WiFi' },
+                { icon: <FaWifi />, text: 'DSTV & Netflix' },
+                { icon: <FaBath />, text: 'Bathroom' },
+                { icon: <FaUtensils />, text: 'Kitchen' },
             ]
         },
         {
@@ -62,23 +52,11 @@ function Rooms() {
             description: 'Spacious room for families with child-friendly amenities.',
             rate: 'MWK 120,000 / Night',
             amenities: [
-                { icon: <FaBed />, text: 'Two Queen Beds' },
+                { icon: <FaBed />, text: 'Two Single Beds' },
                 { icon: <FaWifi />, text: 'Free WiFi' },
+                { icon: <FaWifi />, text: 'DSTV & Netflix' },
                 { icon: <FaBath />, text: 'Family-sized Bathroom' },
                 { icon: <FaSwimmingPool />, text: 'Kids Pool Access' },
-            ]
-        },
-        {
-            src: Image5,
-            alt: 'Honeymoon Suite with Sunset View',
-            label: 'Honeymoon Suite',
-            description: 'Romantic suite with sunset views and couples\' amenities.',
-            rate: 'MWK 200,000 / Night',
-            amenities: [
-                { icon: <FaBed />, text: 'Luxury King-sized Bed' },
-                { icon: <FaWifi />, text: 'High-speed WiFi' },
-                { icon: <FaBath />, text: 'Couples\' Spa Bath' },
-                { icon: <FaConciergeBell />, text: 'Personal Butler' },
             ]
         },
     ];
