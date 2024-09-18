@@ -6,6 +6,7 @@ import { BiSolidDownArrow } from "react-icons/bi";
 
 
 import Hero1 from '../../assets/hero1.jpg';
+import { Link } from 'react-scroll';
 
 function Hero() {
   const handleScroll = () => {
@@ -27,10 +28,12 @@ function Hero() {
         <h1 className='text-white text-3xl md:text-7xl font-source font-medium mt-1'>B e a c h H o t e l</h1>
         <div className='px-8 py-1 bg-white'></div>
         <p className='text-white md:text-xl font-poppins text-md capitalize'>Experience The Difference.</p>
-
+       
+        <a href='/facilities' className='mx-auto'>
         <div className='mt-16 gap-2 mx-auto flex cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 shadow hover:bg-[#1d1d1b] transition duration-300'>
          < FaHotel size={20} /> Explore
         </div>
+        </a>
 
         <div className='mt-4 cursor-pointer mx-auto pt-8 flex items-center' onClick={handleScroll}>
           <BiSolidDownArrow className='text-white text-2xl' />

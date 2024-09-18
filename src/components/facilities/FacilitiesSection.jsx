@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaAddressBook } from "react-icons/fa";
+
 
 import Image1 from '../../assets/DSC05340.jpg';
 import Image2 from '../../assets/DSC05633.jpg';

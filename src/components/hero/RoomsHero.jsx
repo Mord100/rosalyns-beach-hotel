@@ -3,6 +3,8 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { FaArrowDown } from 'react-icons/fa';
 import { FaHotel } from "react-icons/fa";
 import { BiSolidDownArrow } from "react-icons/bi";
+import { FaAddressBook } from "react-icons/fa";
+
 
 
 import Hero1 from '../../assets/DSC05306.jpg';
@@ -21,7 +23,7 @@ function Hero() {
         <p className='text-white md:text-xl font-poppins text-md capitalize'>Experience The Difference.</p>
 
         <div className='mt-16 gap-2 mx-auto flex cursor-pointer bg-[#E0B973] text-white font-semibold py-2 px-6 shadow hover:bg-[#1d1d1b] transition duration-300'>
-         < FaHotel size={20} /> Book
+         < FaAddressBook size={20} /> Book
         </div>
       </div>
     </div>
