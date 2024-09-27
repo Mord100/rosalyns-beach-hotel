@@ -25,10 +25,10 @@ const ContactUs = () => {
             <h2 className="text-3xl font-bold text-[#1d1d1b] mb-6">Get in Touch</h2>
             <h3 className="text-2xl font-semibold text-[#1d1d1b] mb-4">Contact Details</h3>
             <p className="flex items-center mt-2 text-gray-600">
-              <FaEnvelope className="mr-2" /> contact@rosalynbeachhotel.com
+              <FaEnvelope className="mr-2" />rosalynsbeachhotel@gmail.com
             </p>
             <p className="flex items-center text-gray-600 mt-2">
-              <FaPhone className="mr-2" /> +265 999 123 456
+              <FaPhone className="mr-2" /> +265 888 22 66 65
             </p>
             <p className="mt-2 text-gray-600">Mangochi, Malawi</p>
             <button
@@ -98,7 +98,7 @@ const ContactUs = () => {
           <IoMdCloseCircle size={30} onClick={closeModal} className="absolute cursor-pointer top-4 right-4 text-[#1d1d1b] hover:text-[#E0B973]"/>
           <div className="w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122232.74339045703!2d35.19401611640625!3d-14.479654899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d8c1a6e2b2c9b5%3A0x5b5a9e3d8b3f8d3a!2sMangochi%2C%20Malawi!5e0!3m2!1sen!2sus!4v1649392258327!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15465.18388345875!2d35.1113292!3d-14.2942283!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18df070069221845%3A0x79ef1ffa09741f2c!2sRosalyn%E2%80%99s%20Beach%20Hotel!5e0!3m2!1sen!2smw!4v1727440595156!5m2!1sen!2smw"
               width="100%"
               height="100%"
               style={{ border: 0 }}

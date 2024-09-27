@@ -80,7 +80,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-96">
               <img
-                src={Image1}
+                src="https://i.ibb.co/c1bFv6n/DSC05409.jpg"
                 alt="Wines"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -94,7 +94,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg">
               <img
-                src={Image2}
+                src="https://i.ibb.co/RTSxPzt/DSC06350.jpg"
                 alt="Boardroom"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -108,7 +108,7 @@ function Destinations() {
                 className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg"
               >
                 <img
-                  src={Image5}
+                  src="https://i.ibb.co/GJb6J0X/DSC06325.jpg"
                   alt="Coffee"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -121,7 +121,7 @@ function Destinations() {
                 className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg"
               >
                 <img
-                  src={Image4}
+                  src="https://i.ibb.co/S3x5g9w/DSC05640.jpg"
                   alt="Views"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -136,7 +136,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-96">
               <img
-                src={Image3}
+                src="https://i.ibb.co/TYSF4v0/DSC06040.jpg"
                 alt="Quality Time"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

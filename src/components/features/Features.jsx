@@ -35,7 +35,7 @@ const Plan = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
-          {[Book1, Book2, Book3].map((src, index) => (
+          {["https://i.ibb.co/6vR8qHH/DSC05265.jpg", "https://i.ibb.co/z5CpJpt/DSC05652.jpg", "https://i.ibb.co/zPLp6ML/DSC05171.jpg"].map((src, index) => (
             <motion.div
               key={index}
               className="w-full rounded-lg"

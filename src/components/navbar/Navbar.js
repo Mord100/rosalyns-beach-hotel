@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation, Link } from 'react-router-dom';
 import { HiOutlineMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { TbMenuDeep } from "react-icons/tb";
+
 import { FaFacebook, FaInstagram, FaPinterest, FaTwitter, FaYoutube } from 'react-icons/fa';
 import logo from '../../assets/logo.png'; // Adjust the path as necessary
 
@@ -16,7 +18,7 @@ function Navbar() {
   }, [location.pathname]);
 
   return (
-    <div className="flex justify-between items-center w-full h-16 mx-auto text-sm fixed bg-white border-b z-50 px-8 md:px-20 md:text-gray-800">
+    <div className="flex justify-between items-center w-full h-16 mx-auto text-sm fixed bg-white border-b z-50 px-4 md:px-20 md:text-gray-800">
       <Link to='/' className="pt-8 rounded-b-3xl py-5 cursor-pointer">
         <img src={logo} alt="Logo" className="h-10" />
       </Link>
@@ -29,7 +31,7 @@ function Navbar() {
       </ul>
 
       <div onClick={handleNav} className="md:hidden">
-        {nav ? <AiOutlineClose size={20} /> : <HiOutlineMenuAlt4 size={20} />}
+        {nav ? <AiOutlineClose size={20} /> : <TbMenuDeep size={20} />}
       </div>
 
       <ul className={`${nav ? 'fixed top-0 left-0 w-[60%] h-full bg-gray-100 ease-in-out duration-500' : 'fixed left-[-100%] ease-in-out duration-500'} z-50 shadow-md text-gray-800`}>
