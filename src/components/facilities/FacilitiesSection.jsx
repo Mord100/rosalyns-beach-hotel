@@ -17,12 +17,12 @@ function Destinations() {
     }, []);
 
     const images = [
-        { src: Image1, alt: '', label: 'BAR' },
-        { src: Image2, alt: '', label: 'POOL' },
+        { src: "https://i.ibb.co/MkyGJYW/DSC05340.jpg", alt: '', label: 'BAR' },
+        { src: "https://i.ibb.co/dKG24Wb/DSC05633.jpg", alt: '', label: 'POOL' },
         { src: Image3, alt: '', label: 'LOUNGE' },
-        { src: Image4, alt: '', label: 'RESTAURANT' },
-        { src: Image5, alt: '', label: 'BOARD ROOM' },
-        { src: Image6, alt: '', label: 'BOAT RIDES' },
+        { src: "https://i.ibb.co/tC2DjQ2/DSC05435.jpg", alt: '', label: 'RESTAURANT' },
+        { src: "https://i.ibb.co/RTSxPzt/DSC06350.jpg", alt: '', label: 'BOARD ROOM' },
+        { src: "https://i.ibb.co/C6j26Rr/DSC05123.jpg", alt: '', label: 'BOAT RIDES' },
     ];
 
     return (

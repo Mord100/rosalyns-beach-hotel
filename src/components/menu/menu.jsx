@@ -20,8 +20,8 @@ import foodMenuImage6 from "../../assets/Rosalyns Menu_Final_08082024-7.jpg";
 const Tabs = ({ color }) => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
-    <div className="flex justify-center items-center p-8">
-      <div className="w-full max-w-3xl">
+    <div className="flex justify-center items-center py-8 px-4">
+      <div className="w-full max-w-4xl">
         <ul className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row" role="tablist">
           <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
             <a
@@ -39,7 +39,7 @@ const Tabs = ({ color }) => {
               href="#food"
               role="tablist"
             >
-              Food Menu
+              Food
             </a>
           </li>
           <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
@@ -58,12 +58,12 @@ const Tabs = ({ color }) => {
               href="#drinks"
               role="tablist"
             >
-              Drinks Menu
+              Drinks & Beverages
             </a>
           </li>
         </ul>
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-sm rounded">
-          <div className=" py-5 flex-auto">
+          <div className="flex-auto">
             <div className="tab-content tab-space">
               <div className={openTab === 1 ? "block" : "hidden"} id="food">
                 <img src={foodMenuImage} alt="Drinks Menu" className="mt-4 max-w-full h-auto rounded-md shadow-md" />
@@ -78,7 +78,7 @@ const Tabs = ({ color }) => {
               </div>
               <div className={openTab === 2 ? "block" : "hidden"} id="drinks">
 
-                <img src={cafeMenuImage} alt="Drinks Menu" className="mt-4 max-w-full h-auto rounded-md shadow-md" />
+                <img src={cafeMenuImage} alt="Food Menu" className="mt-4 max-w-full h-auto rounded-md shadow-md" />
                 <img src={cafeMenuImage2} alt="Drinks Menu" className="mt-4 max-w-full h-auto rounded-md shadow-md" />
 
               </div>

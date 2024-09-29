@@ -27,30 +27,30 @@ function BeachHotelGallery() {
                     </div>
     
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image2} alt="Gourmet Dining" className="w-full h-[14rem] object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/J56rpNn/DSC05503.jpg" alt="Gourmet Dining" className="w-full h-[14rem] object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image3} alt="Luxurious Suites" className="w-full h-[14rem] object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/6w66K6w/DSC05961.jpg" alt="Luxurious Suites" className="w-full h-[14rem] object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
     
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image4} alt="Sunset Lounge" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/m59Wmwk/DSC06307.jpg" alt="Sunset Lounge" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image5} alt="Spa Retreat" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/ZSnDwBq/DSC06289.jpg" alt="Spa Retreat" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
     
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
                         <img src={Image6} alt="Infinity Pool" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image7} alt="Water Sports" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/ncJtqNK/DSC06380.jpg" alt="Water Sports" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image8} alt="Beach Yoga" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/QN99Gjv/DSC06223.jpg" alt="Beach Yoga" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image9} alt="Private Cabanas" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/Q8MjZL6/DSC05798.jpg" alt="Private Cabanas" className="w-full h-48 object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
                 </div>
             </div>

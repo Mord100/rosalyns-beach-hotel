@@ -30,7 +30,10 @@ const Plan = () => {
             Luxury Redefined
           </h2>
           <p className="max-w-2xl mx-auto mt-4 text-left text-md text-gray-500">
-            At Rosalyn's Beach Hotel, we offer a range of accommodations to suit your needs. From cozy lake-view rooms to spacious suites with private balconies, each of our rooms is designed with comfort and style in mind. Enjoy modern amenities, elegant décor, and the soothing sounds of the ocean right outside your window. Wake up to the sunrise over the sea and drift off to sleep with the sound of waves gently lapping at the shore.
+            At Rosalyn's Beach Hotel, we offer a range of accommodations to suit your needs. From cozy lake-view rooms 
+            to spacious suites with private balconies, each of our rooms is designed with comfort and style in mind. 
+            Enjoy modern amenities, elegant décor, and the soothing sounds of the lake right outside your window. 
+            Wake up to the sunrise over the sea and drift off to sleep with the sound of waves gently lapping at the shore.
           </p>
         </div>
 

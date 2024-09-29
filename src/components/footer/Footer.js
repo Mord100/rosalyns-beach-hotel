@@ -40,9 +40,9 @@ function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-6 text-[#E0B973]">Quick Links</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#" className="hover:text-[#E0B973] transition duration-300">Home</a></li>
-              <li><a href="#" className="hover:text-[#E0B973] transition duration-300">Facilities</a></li>
-              <li><a href="#" className="hover:text-[#E0B973] transition duration-300">Rooms</a></li>
+              <li><a href="./" className="hover:text-[#E0B973] transition duration-300">Home</a></li>
+              <li><a href="./facilities" className="hover:text-[#E0B973] transition duration-300">Facilities</a></li>
+              <li><a href="./rooms" className="hover:text-[#E0B973] transition duration-300">Rooms</a></li>
             </ul>
           </div>
         </div>

@@ -41,12 +41,9 @@ const ImageSlider = () => {
         >
           <img
             src={slide.url}
-            alt={slide.title}
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded">
-            {slide.title}
-          </div>
+         
         </div>
       ))}
     </div>
