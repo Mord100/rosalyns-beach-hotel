@@ -23,7 +23,7 @@ function BeachHotelGallery() {
                 <h1 className="text-4xl font-bold text-center mb-12" data-aos="fade-up">Gallery</h1>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <div className="md:col-span-2 md:row-span-2 relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
-                        <img src={Image1} alt="Beachfront View" className="w-full h-full object-cover transition-transform duration-300 transform hover:scale-110"/>
+                        <img src="https://i.ibb.co/BsYCYJ3/DSC05656.jpg" alt="Beachfront View" className="w-full h-full object-cover transition-transform duration-300 transform hover:scale-110"/>
                     </div>
     
                     <div className="relative overflow-hidden rounded-2xl shadow-lg" data-aos="fade-up">
