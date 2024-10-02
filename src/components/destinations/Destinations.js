@@ -1,11 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./DestinationsStyles.css";
-import Image1 from "../../assets/DSC05409.jpg";
-import Image2 from "../../assets/DSC06350.jpg";
-import Image3 from "../../assets/DSC06040.jpg";
-import Image4 from "../../assets/DSC05640.jpg";
-import Image5 from "../../assets/DSC06325.jpg";
+import Image1 from "../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (11).jpeg";
+import Image2 from "../../assets/WhatsApp Image 2024-10-02 at 10.01.01.jpeg";
+import Image3 from "../../assets/WhatsApp Image 2024-10-02 at 10.05.16.jpeg";
+import Image4 from "../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (16).jpeg";
+import Image5 from "../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (26).jpeg";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
 function Destinations() {
@@ -80,7 +80,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-96">
               <img
-                src="https://i.ibb.co/c1bFv6n/DSC05409.jpg"
+                src={Image1}
                 alt="Wines"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -94,7 +94,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg">
               <img
-                src="https://i.ibb.co/RTSxPzt/DSC06350.jpg"
+                src={Image2}
                 alt="Boardroom"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -108,7 +108,7 @@ function Destinations() {
                 className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg"
               >
                 <img
-                  src="https://i.ibb.co/GJb6J0X/DSC06325.jpg"
+                  src={Image3}
                   alt="Coffee"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -121,7 +121,7 @@ function Destinations() {
                 className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg"
               >
                 <img
-                  src="https://i.ibb.co/S3x5g9w/DSC05640.jpg"
+                  src={Image4}
                   alt="Views"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
@@ -136,7 +136,7 @@ function Destinations() {
           >
             <a href="" className="group block relative h-96">
               <img
-                src="https://i.ibb.co/TYSF4v0/DSC06040.jpg"
+                src={Image5}
                 alt="Quality Time"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

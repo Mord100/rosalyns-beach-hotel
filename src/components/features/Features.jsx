@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import framer-motion
-import Book1 from '../../assets/book1.jpg';
-import Book2 from '../../assets/book2.jpg';
-import Book3 from '../../assets/book3.jpg';
+import Book1 from '../../assets/WhatsApp Image 2024-10-02 at 09.36.41 (1).jpeg';
+import Book2 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (18).jpeg';
+import Book3 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (2).jpeg';
 
 // Define animation variants
 const textVariant = {
@@ -38,7 +38,7 @@ const Plan = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
-          {["https://i.ibb.co/6vR8qHH/DSC05265.jpg", "https://i.ibb.co/z5CpJpt/DSC05652.jpg", "https://i.ibb.co/zPLp6ML/DSC05171.jpg"].map((src, index) => (
+          {[Book1, Book2,Book3].map((src, index) => (
             <motion.div
               key={index}
               className="w-full rounded-lg"
