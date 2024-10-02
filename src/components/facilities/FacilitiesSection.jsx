@@ -4,12 +4,12 @@ import 'aos/dist/aos.css';
 import { FaAddressBook } from "react-icons/fa";
 
 
-import Image1 from '../../assets/DSC05340.jpg';
-import Image2 from '../../assets/DSC05633.jpg';
+import Image1 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (9).jpeg';
+import Image2 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (12).jpeg';
 import Image3 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.04 (1).jpeg';
-import Image4 from '../../assets/DSC05435.jpg';
-import Image5 from '../../assets/DSC06350.jpg';
-import Image6 from '../../assets/DSC05123.jpg';
+import Image4 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56 (23).jpeg';
+import Image5 from '../../assets/WhatsApp Image 2024-10-02 at 10.01.01.jpeg';
+import Image6 from '../../assets/WhatsApp Image 2024-10-02 at 09.32.56.jpeg';
 
 function Destinations() {
     useEffect(() => {
@@ -17,12 +17,12 @@ function Destinations() {
     }, []);
 
     const images = [
-        { src: "https://i.ibb.co/MkyGJYW/DSC05340.jpg", alt: '', label: 'BAR' },
-        { src: "https://i.ibb.co/dKG24Wb/DSC05633.jpg", alt: '', label: 'POOL' },
+        { src: Image1, alt: '', label: 'BAR' },
+        { src: Image4, alt: '', label: 'POOL' },
         { src: Image3, alt: '', label: 'LOUNGE' },
-        { src: "https://i.ibb.co/tC2DjQ2/DSC05435.jpg", alt: '', label: 'RESTAURANT' },
-        { src: "https://i.ibb.co/RTSxPzt/DSC06350.jpg", alt: '', label: 'BOARD ROOM' },
-        { src: "https://i.ibb.co/C6j26Rr/DSC05123.jpg", alt: '', label: 'BOAT RIDES' },
+        { src: Image2, alt: '', label: 'RESTAURANT' },
+        { src: Image5, alt: '', label: 'BOARD ROOM' },
+        { src: Image6, alt: '', label: 'BOAT RIDES' },
     ];
 
     return (
