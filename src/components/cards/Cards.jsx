@@ -10,21 +10,21 @@ import 'swiper/css/autoplay';
 import { IoTvSharp } from "react-icons/io5";
 import { TbAirConditioning } from "react-icons/tb";
 
-import Image1 from '../../assets/vip-beach-front-villa.jpg';
-import Image2 from '../../assets/DSC05656.jpg';
+import Image1 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (11).jpeg';
+import Image2 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (17).jpeg';
 import Image3 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.03.jpeg';
-import Image4 from '../../assets/DSC06028.jpg';
-import Image5 from '../../assets/excutive.jpg';
-import Image6 from '../../assets/excutive-3.jpg';
-import Image7 from '../../assets/villa-excutive.jpg';
+import Image4 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (16).jpeg';
+import Image5 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57.jpeg';
+import Image6 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (13).jpeg';
+import Image7 from '../../assets/WhatsApp Image 2024-10-02 at 09.36.41.jpeg';
 import Image8 from '../../assets/DSC05282.jpg';
-import Image9 from '../../assets/family-room.jpg';
-import Image10 from '../../assets/excutive-room-1.jpg';
-import Image11 from '../../assets/family.jpg';
+import Image9 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (4).jpeg';
+import Image10 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (3).jpeg';
+import Image11 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (6).jpeg';
 import Image12 from '../../assets/family-room.jpg';
 import Image13 from '../../assets/WhatsApp Image 2024-06-30 at 18.38.04 (1).jpeg';
-import Image14 from '../../assets/DSC06140.jpg';
-import Image15 from '../../assets/superior-suite.jpg';
+import Image14 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (7).jpeg';
+import Image15 from '../../assets/WhatsApp Image 2024-10-10 at 19.27.57 (2).jpeg';
 
 
 
@@ -53,7 +53,7 @@ function Rooms() {
             ]
         },
         {
-            images: [Image6, Image5, Image8, Image7, Image14, Image15],
+            images: [Image6, Image5, Image7, Image14, Image15],
             alt: 'Superior Suite',
             label: 'Superior Suite',
             description: 'Indulge in our luxurious Executive Suite, offering panoramic views and exclusive amenities. Perfect for couples or business travelers, this suite includes a sumptuous bed and breakfast for two, ensuring a memorable stay.',
