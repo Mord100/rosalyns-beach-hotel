@@ -36,16 +36,13 @@ function Destinations() {
           >
             All Inclusive Resort
           </motion.h2>
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg text-gray-600 mb-8"
-          >
+          <motion.p variants={fadeInUp} className="text-lg text-gray-600 mb-8">
             Discover the perfect blend of relaxation and luxury at Rosalyn's
             Beach Hotel. Located on the stunning coastline, our hotel offers
             breathtaking lake views, comfortable accommodations, and
             unparalleled service.
           </motion.p>
-          <motion.div 
+          <motion.div
             variants={fadeInUp}
             className="flex justify-center text-[#E0B973] mb-8"
           >
@@ -57,10 +54,7 @@ function Destinations() {
               <MdOutlineStarPurple500 size={24} />
             </div>
           </motion.div>
-          <motion.p
-            variants={fadeInUp}
-            className="text-lg text-gray-600"
-          >
+          <motion.p variants={fadeInUp} className="text-lg text-gray-600">
             Whether you're here to unwind, explore, or celebrate, Rosalyn's
             Beach Hotel is your gateway to an unforgettable beachside
             experience.
@@ -74,7 +68,7 @@ function Destinations() {
           viewport={{ once: true, amount: 0.5 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
-          <motion.div
+          {/* <motion.div
             variants={fadeInUp}
             className="col-span-1 md:col-span-2 bg-white rounded-lg overflow-hidden shadow-lg"
           >
@@ -85,21 +79,25 @@ function Destinations() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              <h3 className="absolute bottom-6 left-6 text-3xl font-semibold text-white">Wines</h3>
+              <h3 className="absolute bottom-6 left-6 text-3xl font-semibold text-white">
+                Wines
+              </h3>
             </a>
-          </motion.div>
-          <motion.div
-            variants={fadeInUp}
-            className="col-span-1 space-y-8"
-          >
-            <a href="" className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg">
+          </motion.div> */}
+          {/* <motion.div variants={fadeInUp} className="col-span-1 space-y-8">
+            <a
+              href=""
+              className="group block relative h-44 bg-white rounded-lg overflow-hidden shadow-lg"
+            >
               <img
                 src={Image2}
                 alt="Boardroom"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              <h3 className="absolute bottom-4 left-4 text-2xl font-semibold text-white">Boardroom</h3>
+              <h3 className="absolute bottom-4 left-4 text-2xl font-semibold text-white">
+                Boardroom
+              </h3>
             </a>
             <div className="grid grid-cols-2 gap-8">
               <motion.a
@@ -113,7 +111,9 @@ function Destinations() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">Coffee</h3>
+                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">
+                  Coffee
+                </h3>
               </motion.a>
               <motion.a
                 variants={fadeInUp}
@@ -126,11 +126,13 @@ function Destinations() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">Views</h3>
+                <h3 className="absolute bottom-4 left-4 text-xl font-semibold text-white">
+                  Views
+                </h3>
               </motion.a>
             </div>
-          </motion.div>
-          <motion.div
+          </motion.div> */}
+          {/* <motion.div
             variants={fadeInUp}
             className="col-span-1 md:col-span-3 bg-white rounded-lg overflow-hidden shadow-lg"
           >
@@ -141,9 +143,11 @@ function Destinations() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50"></div>
-              <h3 className="absolute bottom-6 left-6 text-3xl font-semibold text-white">Quality Time</h3>
+              <h3 className="absolute bottom-6 left-6 text-3xl font-semibold text-white">
+                Quality Time
+              </h3>
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
     </div>

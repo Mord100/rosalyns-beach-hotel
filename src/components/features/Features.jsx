@@ -25,7 +25,7 @@ const Plan = () => {
         animate="visible"
         variants={textVariant}
       >
-        <div className="w-full md:flex md:flex-col-2 gap-4 mx-auto text-center">
+        {/* <div className="w-full md:flex md:flex-col-2 gap-4 mx-auto text-center">
           <h2 className="text-3xl font-bold leading-tight text-[#1d1d1b] sm:text-4xl lg:text-5xl lg:leading-tight">
             Luxury Redefined
           </h2>
@@ -35,7 +35,7 @@ const Plan = () => {
             Enjoy modern amenities, elegant décor, and the soothing sounds of the lake right outside your window. 
             Wake up to the sunrise over the sea and drift off to sleep with the sound of waves gently lapping at the shore.
           </p>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
           {[Book1, Book2,Book3].map((src, index) => (
