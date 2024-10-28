@@ -30,28 +30,34 @@ function Navbar() {
         <NavLink to='/contact' className={({ isActive }) => isActive ? "px-4 cursor-pointer transition duration-600 font-bold" : "px-4 cursor-pointer"}><li>Contact Us</li></NavLink>
       </ul>
 
-      <div onClick={handleNav} className="md:hidden">
+      <div onClick={handleNav} className="md:hidden z-50">
         {nav ? <AiOutlineClose size={20} /> : <TbMenuDeep size={20} />}
       </div>
 
-      <ul className={`${nav ? 'fixed top-0 left-0 w-[60%] h-full bg-gray-100 ease-in-out duration-500' : 'fixed left-[-100%] ease-in-out duration-500'} z-50 shadow-md text-gray-800`}>
-        <Link to='/' className='w-full m-4 cursor-pointer'>
-          <img src={logo} alt="Logo" className="h-12 pl-4" />
-        </Link>
-        <div className="px-8">
-          <NavLink to='/home' className={({ isActive }) => isActive ? "p-4 border-gray-300 cursor-pointer  font-bold" : "p-4 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Home</li></NavLink>
-          <NavLink to='/facilities' className={({ isActive }) => isActive ? "p-4 border-gray-300 cursor-pointer  font-bold" : "p-4 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Facilities</li></NavLink>
-          <NavLink to='/rooms' className={({ isActive }) => isActive ? "p-4 border-gray-300 cursor-pointer  font-bold" : "p-4 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Rooms</li></NavLink>
-          <NavLink to='/restaurant' className={({ isActive }) => isActive ? "p-4 border-gray-300 cursor-pointer  font-bold" : "p-4 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Restaurant</li></NavLink>
-          <NavLink to='/contact' className={({ isActive }) => isActive ? "p-4 border-gray-300 cursor-pointer  font-bold" : "p-4 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Contact Us</li></NavLink>
+      <div className={nav ? ' fixed inset-0 transition-opacity duration-300' : 'opacity-0 fixed inset-0 pointer-events-none transition-opacity duration-300'} onClick={handleNav}></div>
+
+      <div className={`fixed top-0 ${nav ? 'left-0' : '-left-full'} w-[60%] h-full bg-white transition-all duration-500 ease-in-out z-50`}>
+        <div className="h-full flex flex-col justify-between">
+          <div>
+            <Link to='/' className='w-full m-4 cursor-pointer' onClick={() => setNav(false)}>
+              <img src={logo} alt="Logo" className="h-12 pl-4" />
+            </Link>
+            <div className="px-8 flex flex-col space-y-6 list-none">
+              <NavLink to='/home' className={({ isActive }) => isActive ? "py-2 border-gray-300 cursor-pointer font-bold" : "py-2 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Home</li></NavLink>
+              <NavLink to='/facilities' className={({ isActive }) => isActive ? "py-2 border-gray-300 cursor-pointer font-bold" : "py-2 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Facilities</li></NavLink>
+              <NavLink to='/rooms' className={({ isActive }) => isActive ? "py-2 border-gray-300 cursor-pointer font-bold" : "py-2 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Rooms</li></NavLink>
+              <NavLink to='/restaurant' className={({ isActive }) => isActive ? "py-2 border-gray-300 cursor-pointer font-bold" : "py-2 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Restaurant</li></NavLink>
+              <NavLink to='/contact' className={({ isActive }) => isActive ? "py-2 border-gray-300 cursor-pointer font-bold" : "py-2 border-gray-300 cursor-pointer"} onClick={() => setNav(false)}><li>Contact Us</li></NavLink>
+            </div>
+          </div>
+          <div className="flex px-8 space-x-4 py-8 border-t">
+            <FaFacebook className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
+            <FaInstagram className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
+            <FaTwitter className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
+            <FaPinterest className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
+          </div>
         </div>
-        <div className="flex px-8 space-x-4 py-4">
-          <FaFacebook className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
-          <FaInstagram className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
-          <FaTwitter className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
-          <FaPinterest className='text-2xl cursor-pointer hover:scale-150 transition duration-300' />
-        </div>
-      </ul>
+      </div>
     </div>
   );
 }
