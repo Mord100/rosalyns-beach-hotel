@@ -26,7 +26,7 @@ function Destinations() {
     ];
 
     return (
-        <div name='destinations' className='destinations'>
+        <div name='destinations' className='destinations py-20'>
             <div className="container">
             <h1 className='font-source text-4xl font-light text-[#1d1d1b] mb-2 text-center' data-aos="fade-up">Facilities</h1>
             <div className='w-24 h-1 bg-[#E0B973] mx-auto mb-8' data-aos="fade-up" data-aos-delay="100"></div>
@@ -39,7 +39,7 @@ function Destinations() {
                     {images.map((image, index) => (
                         <div className="relative mb-8" key={index}>
                             <img className='w-full py-4 h-full rounded-md' src={image.src} alt={image.alt} data-aos="zoom-in" data-aos-delay={index * 100} />
-                            <div className="absolute bottom-[-1rem] left-1/2 shadow-lg transform font-bold w-1/2 -translate-x-1/2 bg-white px-4 py-4 rounded-sm text-[#1d1d1b]">
+                            <div className="absolute bottom-[-1rem] left-1/2 flex justify-center mx-auto items-center shadow-lg transform font-bold w-1/2 -translate-x-1/2 bg-white px-4 py-4 rounded-sm text-[#1d1d1b]">
                                 {image.label}
                             </div>
                         </div>

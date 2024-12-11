@@ -8,7 +8,7 @@ const Facilities = () => {
     <div>
         <Navbar/>
         <Hero/>
-        <FacilitySection/>
+        <FacilitySection />
     </div>
   )
 }

@@ -37,7 +37,7 @@ const Plan = () => {
           </p>
         </div> */}
 
-        <div className="grid grid-cols-1 gap-6 mt-8 sm:grid-cols-3 md:mt-16 lg:gap-x-12">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-x-12">
           {[Book1, Book2,Book3].map((src, index) => (
             <motion.div
               key={index}
