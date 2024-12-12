@@ -52,7 +52,7 @@ function LuxuryHero() {
   if (!imagesLoaded) {
     return (
       <div className="flex items-center justify-center h-screen bg-black text-white">
-        <div className="animate-pulse text-2xl">Welcome To Rosalyn's Beach Hotel...</div>
+        <div className="animate-pulse px-32 mx-auto text-2xl">Rosalyn's Beach Hotel...</div>
       </div>
     );
   }
