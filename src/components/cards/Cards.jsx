@@ -74,7 +74,7 @@ function Rooms() {
             description: 'Our Family Room is designed with your comfort in mind. 2 separate bedrooms, 2 bathrooms, and a spacious living area accomodating up to 5 people. Spacious and welcoming, it features child-friendly amenities and easy access to our kids\' pool, making it the perfect choice for a memorable family getaway.',
             rate: 'MWK 420,000 / Night',
             amenities: [
-                { icon: <FaBed />, text: '2 Single Beds, 1 King-sized Bed' },
+                { icon: <FaBed />, text: '2 Single Beds, 1 King-sized Bed, Sleeper Couch' },
                 { icon: <FaWifi />, text: 'Free WiFi' },
                 { icon: <IoTvSharp />, text: 'DSTV & Netflix' },
                 { icon: <TbAirConditioning />, text: 'Air Conditioning' },
