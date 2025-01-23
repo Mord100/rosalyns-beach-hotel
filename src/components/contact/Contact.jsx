@@ -3,6 +3,8 @@ import Modal from 'react-modal';
 import { IoMdCloseCircle } from "react-icons/io";
 import { TbGps } from "react-icons/tb";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaAddressBook } from "react-icons/fa6";
+
 
 Modal.setAppElement('#root');
 
@@ -25,7 +27,10 @@ const ContactUs = () => {
             <h2 className="text-3xl font-bold text-[#1d1d1b] mb-6">Get in Touch</h2>
             <h3 className="text-2xl font-semibold text-[#1d1d1b] mb-4">Contact Details</h3>
             <p className="flex items-center mt-2 text-gray-600">
-              <FaEnvelope className="mr-2" />rosalynsbeachhotel@gmail.com
+              <FaEnvelope className="mr-2" />info@rosalynsbeachhotel.com
+            </p>
+            <p className="flex items-center mt-2 text-gray-600">
+              <FaAddressBook className="mr-2" />reservations@rosalynsbeachhotel.com
             </p>
             <p className="flex items-center text-gray-600 mt-2">
               <FaPhone className="mr-2" /> +265 888 22 66 65

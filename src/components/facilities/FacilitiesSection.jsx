@@ -35,10 +35,10 @@ function Destinations() {
                     Enjoy a perfect blend of luxury and comfort with stunning lake views, gourmet dining, and a range of activities to suit 
                     all tastes.
                 </p>
-                <div className="mx-auto w-[90%] md:w-[80%]" data-aos="fade-up" data-aos-delay="400">
+                <div className="mx-auto w-[90%]  md:w-[80%]" data-aos="fade-up" data-aos-delay="400">
                     {images.map((image, index) => (
-                        <div className="relative mb-8" key={index}>
-                            <img className='w-full py-4 h-full rounded-md' src={image.src} alt={image.alt} data-aos="zoom-in" data-aos-delay={index * 100} />
+                        <div className="relative bg-[#E0B973] rounded-lg mb-8" key={index}>
+                            <img className='w-full py-4 h-full border-4 border-[#E0B973] rounded-md' src={image.src} alt={image.alt} data-aos="zoom-in" data-aos-delay={index * 100} />
                             <div className="absolute bottom-[-1rem] left-1/2 flex justify-center mx-auto items-center shadow-lg transform font-bold w-1/2 -translate-x-1/2 bg-white px-4 py-4 rounded-sm text-[#1d1d1b]">
                                 {image.label}
                             </div>
